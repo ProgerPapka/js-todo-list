@@ -1,8 +1,15 @@
-.card {
+.card.light-theme {
     display: flex;
     flex-flow: column nowrap;
 
-    border: 1px solid black;
+    border: 1px solid #121212;
+}
+
+.card.dark-theme {
+    display: flex;
+    flex-flow: column nowrap;
+
+    border: 5px solid #f6f7f8;
 }
 
 .card__header {
@@ -13,6 +20,14 @@
 
     padding: 8px 0;
     margin-bottom: 12px;
+}
+
+.card__footer {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
 }
 
 .card__description {
@@ -28,9 +43,66 @@
 
 .card__number {
     padding: 0 16px;
+    font-size: 30px;
 }
 
 .card__remove {
-    padding: 0 16px;
+    padding: 10px 16px;
     margin-right: 16px;
+    border-radius: 9px;
+}
+
+.card__update {
+    font-size: 15px;
+    padding: 14px;
+    margin-right: 16px;
+    margin-left: 16px;
+    border-radius: 9px;
+}
+
+.card__author {
+    margin-top: 8px;
+    margin-left: 16px;
+    font-size: 20px;
+    border-style: solid;
+    padding: 23px;
+}
+
+.star__button.light-theme {
+    background-color: #686c70;
+    color: #ffffff;
+    margin-right: 10px;
+    transition: 0.3s;
+    border-radius: 9px;
+}
+
+.star__button.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+    margin-right: 10px;
+    transition: 0.3s;
+    border-radius: 9px;
+}
+
+.star__button.light-theme:hover {
+    transition: 0.3s;
+    color: #fffa00;
+}
+
+.star__button.dark-theme:hover {
+    transition: 0.3s;
+    color: #6e87e1;
+}
+
+.button__active.light-theme {
+    color: #fffa00;
+}
+
+.button__active.dark-theme {
+    color: #6e87e1 !important;
+}
+
+.number__container {
+    display: flex;
+    flex-direction: row;
 }
